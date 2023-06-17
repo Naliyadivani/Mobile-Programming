@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout4"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Minggu8.AppBarOverlay"
+        tools:ignore="MissingConstraints">
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="#e6616f"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="0.961"
+        app:rippleColor="#FFFFFF"
+        app:srcCompat="@drawable/ic_shopping_cart"
+        tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="416dp"
+        android:layout_height="60dp"
+        android:background="?attr/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:popupTheme="@style/Theme.Minggu8.PopupOverlay"
+        tools:layout_editor_absoluteY="-3dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/cola"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@string/Kombinasi_sempurna_Rasa_manis_cola_keharuman_jeruk_nipis"
+        android:onClick="showColaOrder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title_menu_minuman"
+        app:srcCompat="@drawable/cola" />
+
+    <TextView
+        android:id="@+id/title_menu_minuman"
+        android:layout_width="142dp"
+        android:layout_height="23dp"
+        android:layout_marginTop="36dp"
+        android:text="Menu Minuman"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ImageView
+        android:id="@+id/oceanblue"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginBottom="112dp"
+        android:contentDescription="@string/Rasakan_Keajaiban_Laut_dalam_Setiap_Tegukan_Minuman_Ocean_Blue"
+        android:onClick="showOceanblueOrder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/oceanblue" />
+
+    <ImageView
+        android:id="@+id/orangejuice"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="@string/Kekuatan_Alam_yang_Segar_dalam_Setiap_Tetes_Minuman_Orange_Juice"
+        android:onClick="showOrangejuiceOrder"
+        app:layout_constraintBottom_toTopOf="@+id/oceanblue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cola"
+        app:layout_constraintVertical_bias="0.188"
+        app:srcCompat="@drawable/orangejuice" />
+
+    <TextView
+        android:id="@+id/deskripsi_cola"
+        android:layout_width="194dp"
+        android:layout_height="62dp"
+        android:text="@string/Kombinasi_sempurna_Rasa_manis_cola_keharuman_jeruk_nipis"
+        app:layout_constraintBottom_toBottomOf="@+id/cola"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cola"
+        app:layout_constraintTop_toTopOf="@+id/cola" />
+
+    <TextView
+        android:id="@+id/deskripsi_oceanblue"
+        android:layout_width="199dp"
+        android:layout_height="81dp"
+        android:text="@string/Rasakan_Keajaiban_Laut_dalam_Setiap_Tegukan_Minuman_Ocean_Blue"
+        app:layout_constraintBottom_toBottomOf="@+id/oceanblue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/oceanblue"
+        app:layout_constraintTop_toTopOf="@+id/oceanblue"
+        app:layout_constraintVertical_bias="0.489" />
+
+    <TextView
+        android:id="@+id/deskripsi_orangejuice"
+        android:layout_width="195dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/Kekuatan_Alam_yang_Segar_dalam_Setiap_Tetes_Minuman_Orange_Juice"
+        app:layout_constraintBottom_toBottomOf="@+id/orangejuice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.404"
+        app:layout_constraintStart_toEndOf="@+id/orangejuice"
+        app:layout_constraintTop_toTopOf="@+id/orangejuice"
+        app:layout_constraintVertical_bias="0.38" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Minuman Segar</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="Kombinasi_sempurna_Rasa_manis_cola_keharuman_jeruk_nipis"><![CDATA[Kombinasi sempurna: Rasa manis cola, keharuman jeruk nipis!]]></string>
+    <string name="Rasakan_Keajaiban_Laut_dalam_Setiap_Tegukan_Minuman_Ocean_Blue"><![CDATA[Rasakan Keajaiban Laut dalam Setiap Tegukan Minuman Ocean Blue!]]></string>
+    <string name="Kekuatan_Alam_yang_Segar_dalam_Setiap_Tetes_Minuman_Orange_Juice"><![CDATA[Kekuatan Alam yang Segar dalam Setiap Tetes Minuman Orange Juice!]]></string>
+
+    <string name="cola_order_message">Kamu memesan Cola.</string>
+    <string name="oceanblue_order_message">Kamu memesan Ocean Blue Drink.</string>
+    <string name="orangejuice_order_message">Kamu memesan Orange Juice.</string>
+
+</resources>

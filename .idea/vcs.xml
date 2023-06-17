@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/minggu10-5.1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/minggu10-5.2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/minggu10-5.3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/minggu11-10.1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/minggu11-10.2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/minggu4" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/minggu5" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/minggu8-4.2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/minggu9-4.3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/minggu9-4.4-4.5" vcs="Git" />
+  </component>
+</project>
