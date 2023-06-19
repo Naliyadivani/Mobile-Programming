@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showPicker() {
-        val pickerOptions = arrayOf("Option 1", "Option 2", "Option 3")
+        val pickerOptions = arrayOf("Delete", "Edit", "Complete")
 
         val builder = androidx.appcompat.app.AlertDialog.Builder(this)
         builder.setTitle("Select an option")
