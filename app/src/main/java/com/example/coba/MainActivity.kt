@@ -12,15 +12,22 @@ class MainActivity : AppCompatActivity() {
     // Variabel anggota untuk menyimpan skor
     private var mScore1: Int = 0
     private var mScore2: Int = 0
+    private var mScore3: Int = 0
+    private var mScore4: Int = 0
+
 
     // Variabel anggota untuk dua elemen TextView skor
     private lateinit var mScoreText1: TextView
     private lateinit var mScoreText2: TextView
+    private lateinit var mScoreText3: TextView
+    private lateinit var mScoreText4: TextView
 
     // Tag yang akan digunakan sebagai kunci dalam OnSavedInstanceState
     companion object {
         const val STATE_SCORE_1 = "Skor Tim 1"
         const val STATE_SCORE_2 = "Skor Tim 2"
+        const val STATE_SCORE_3 = "Skor Tim 3"
+        const val STATE_SCORE_4 = "Skor Tim 4"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,15 +37,21 @@ class MainActivity : AppCompatActivity() {
         // Temukan TextViews berdasarkan ID
         mScoreText1 = findViewById(R.id.score_1)
         mScoreText2 = findViewById(R.id.score_2)
+        mScoreText3 = findViewById(R.id.score_3)
+        mScoreText4 = findViewById(R.id.score_4)
 
         // Mengembalikan skor jika ada savedInstanceState.
         if (savedInstanceState != null) {
             mScore1 = savedInstanceState.getInt(STATE_SCORE_1)
             mScore2 = savedInstanceState.getInt(STATE_SCORE_2)
+            mScore3 = savedInstanceState.getInt(STATE_SCORE_3)
+            mScore4 = savedInstanceState.getInt(STATE_SCORE_4)
 
             // Tetapkan TextView skor
             mScoreText1.text = mScore1.toString()
             mScoreText2.text = mScore2.toString()
+            mScoreText3.text = mScore3.toString()
+            mScoreText4.text = mScore4.toString()
         }
     }
 
@@ -57,6 +70,18 @@ class MainActivity : AppCompatActivity() {
                 // Kurangi skor dan perbarui TextView.
                 mScore2--
                 mScoreText2.text = mScore2.toString()
+            }
+            // Jika itu adalah Tim 3:
+            R.id.decreaseTeam3 -> {
+                // Kurangi skor dan perbarui TextView.
+                mScore3--
+                mScoreText3.text = mScore3.toString()
+            }
+            // Jika itu adalah Tim 4:
+            R.id.decreaseTeam4 -> {
+                // Kurangi skor dan perbarui TextView.
+                mScore4--
+                mScoreText4.text = mScore4.toString()
             }
         }
     }
@@ -77,8 +102,22 @@ class MainActivity : AppCompatActivity() {
                 mScore2++
                 mScoreText2.text = mScore2.toString()
             }
+            // Jika itu adalah Tim 3:
+            R.id.increaseTeam3 -> {
+                // Tambahkan skor dan perbarui TextView.
+                mScore3++
+                mScoreText3.text = mScore3.toString()
+            }
+            // Jika itu adalah Tim 4:
+            R.id.increaseTeam4 -> {
+                // Tambahkan skor dan perbarui TextView.
+                mScore4++
+                mScoreText4.text = mScore4.toString()
+            }
         }
     }
+
+
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.main_menu, menu)
@@ -113,6 +152,8 @@ class MainActivity : AppCompatActivity() {
         // Simpan skor.
         outState.putInt(STATE_SCORE_1, mScore1)
         outState.putInt(STATE_SCORE_2, mScore2)
+        outState.putInt(STATE_SCORE_3, mScore3)
+        outState.putInt(STATE_SCORE_4, mScore4)
         super.onSaveInstanceState(outState)
     }
 }
