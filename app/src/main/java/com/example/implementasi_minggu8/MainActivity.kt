@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
         // Spinner
         val spinner = findViewById<Spinner>(R.id.spinner)
         val spinnerButton = findViewById<Button>(R.id.spinnerButton)
-        val spinnerValues = arrayOf("Value 1", "Value 2", "Value 3")
+        val spinnerValues = arrayOf("Ceker", "crabstick", "Cikuwa")
         val spinnerAdapter = ArrayAdapter(this, android.R.layout.simple_spinner_dropdown_item, spinnerValues)
         spinner.adapter = spinnerAdapter
         spinnerButton.setOnClickListener {

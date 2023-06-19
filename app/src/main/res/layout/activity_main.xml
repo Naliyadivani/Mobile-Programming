@@ -9,27 +9,36 @@
     <EditText
         android:id="@+id/editText"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter text here" />
+        android:hint="@string/enter_text_here"
+        android:background="@color/gray"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:layout_height="50dp"
+        />
 
     <Button
         android:id="@+id/textButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Show Text" />
+        android:text="@string/show_text" />
 
     <!-- CheckBox -->
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Check me" />
+        android:text="@string/bakso" />
 
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/seblak" />
     <Button
         android:id="@+id/checkButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Check Status" />
+        android:text="@string/show_option" />
 
     <!-- RadioButtons -->
     <RadioGroup
@@ -42,26 +51,26 @@
             android:id="@+id/radioButton1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Option 1" />
+            android:text="@string/pedas" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Option 2" />
+            android:text="@string/sedang" />
 
         <RadioButton
             android:id="@+id/radioButton3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Option 3" />
+            android:text="@string/tidak_pedas" />
     </RadioGroup>
 
     <Button
         android:id="@+id/radioButtonsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Check Selection" />
+        android:text="@string/level" />
 
     <!-- Spinner -->
     <Spinner
@@ -74,6 +83,6 @@
         android:id="@+id/spinnerButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Check Selection" />
+        android:text="@string/check_selection" />
 
 </LinearLayout>
