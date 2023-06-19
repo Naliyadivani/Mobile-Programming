@@ -23,11 +23,9 @@
     <string name="title_placeholder">Title</string>
     <string name="news_title">News</string>
     <string name="sports_info_placeholder">Here is some news</string>
-    <string name="sports_news_detail_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        Praesent ultrices congue rutrum. Phasellus elementum ipsum ac convallis aliquam. Suspendisse
-        eleifend eros a enim faucibus mollis. Nunc placerat, est vitae vestibulum blandit, dolor
-        diam fringilla tellus, eu euismod mauris neque at neque.</string>
-    />
+    <string name="sports_news_detail_text">Get the latest updates on the exciting world of sports! From thrilling matches to record-breaking performances, we bring you all the action.
+        Stay informed about your favorite teams, players, and tournaments. Dive into the in-depth analysis, expert opinions, and behind-the-scenes stories. Whether its football, basketball, cricket, tennis, or any other sport, weve got you covered. Dont miss a moment of the adrenaline-pumping excitement. Stay tuned for the latest sports news!</string>
+
 
     <string name="baseball">Baseball</string>
     <string name="badminton">Badminton</string>
