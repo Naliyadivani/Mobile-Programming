@@ -13,6 +13,6 @@
      limitations under the License.
 -->
 <resources>
-    <string name="app_name">SQL Basics</string>
-    <string name="instruction">The database is ready!\n\nUse the database inspector in Android Studio to run SQL commands.</string>
+    <string name="app_name">Belajar SQL</string>
+    <string name="instruction">The database is prepared and available for use!\n\n Utilize the database inspector within Android Studio for executing SQL commands.</string>
 </resources>
